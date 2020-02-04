@@ -10,6 +10,10 @@
 using namespace std;
 
 class employee : public human{  //employee inherits human attributes
+private:
+    int employee_id;
 public:
     employee(string, string, short);    //Constructor for initializing employee object
+    int assignNewEmployeeId();
+    void dispInformation(string = "Employee");
 };

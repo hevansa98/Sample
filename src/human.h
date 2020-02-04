@@ -22,6 +22,6 @@ public:
     string getLastName();                       //returns "last_name"
     short getAge();                             //returns age
     int * getId();                              //returns pointer to id_number
-    int assignNewID();                          //returns random number from 1 to 10000
-    void dispInformation();                     //prints object attribute data to console (first_name, last_name, age, id_number[0])
+    int assignNewId();                          //returns random number from 1 to 10000
+    void dispInformation(string = "Regular");                     //prints object attribute data to console (first_name, last_name, age, id_number[0])
 };

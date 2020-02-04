@@ -6,7 +6,7 @@
 #include "human.h"
 
 human::human(string f_name, string l_name, short _age, short id_type) : first_name(f_name), last_name(l_name), age(_age){
-    id_number[0] = assignNewID();
+    id_number[0] = assignNewId();
     id_number[1] = id_type;
     if(id_type == 0){
         cout << "First Name:\t\t" << first_name << endl;
@@ -37,14 +37,16 @@ int * human::getId(){
     return id_number;
 }
 
-int human::assignNewID(){
-    return (rand()%10000)+1;
+int human::assignNewId(){
+    return (rand()%9998)+1;
 }
 
-void human::dispInformation(){
-    cout << "Status:\tReg User" << endl;
+void human::dispInformation(string status){
+    cout << "Status:\t" << status << endl;
     cout << "Name:\t" << getFullName() << endl;
     cout << "Age:\t" << getAge() << endl;
     cout << "ID:\t" << *getId() << endl;
-    cout << "\n--------------------\n" << endl;
+    if(!status.compare("Regular")){
+        cout << "\n--------------------\n" << endl;
+    }
 }

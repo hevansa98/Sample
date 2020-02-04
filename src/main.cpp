@@ -15,6 +15,6 @@ int main(void){
     user2 = new employee("Dave", "Dimadome", 59);
     
     user1 -> dispInformation();
-    user2 -> human::dispInformation();
+    user2 -> dispInformation();
     return 0;
 }
