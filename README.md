@@ -4,7 +4,8 @@ Author: Harry E. Allen, IV
 </br>MIT License
 </br></br>
 # Compile instructions
-g++ main.cpp human.cpp employee.cpp -o a.out
+cd src/
+</br>g++ main.cpp human.cpp employee.cpp -o a.out
 </br>./a.out
 </br></br>--OR--
 </br></br>bash compileAndRun.sh
