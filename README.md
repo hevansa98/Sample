@@ -6,3 +6,5 @@ Author: Harry E. Allen, IV
 # Compile instructions
 g++ main.cpp human.cpp employee.cpp -o a.out
 </br>./a.out
+</br></br>--OR--
+</br>./compileAndRun.sh
