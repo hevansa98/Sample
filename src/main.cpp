@@ -10,7 +10,7 @@ int main(void){
     srand(time(NULL));
     human *user1;
     employee *user2;
-
+    
     user1 = new human("John", "Smith", 21);
     user2 = new employee("Dave", "Dimadome", 59);
     

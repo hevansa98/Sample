@@ -11,9 +11,10 @@ using namespace std;
 
 class employee : public human{  //employee inherits human attributes
 private:
-    int employee_id;
+    int id_employee;
 public:
-    employee(string, string, short);    //Constructor for initializing employee object
+    employee(string, string, short);                //Constructor for initializing employee object
+    employee(string, string, short, int, int, int); //COnstructor for existing employee
     int assignNewEmployeeId();
     void dispInformation(string = "Employee");
 };
