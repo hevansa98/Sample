@@ -1,2 +1,2 @@
 FNAM	LNAM	AGE	ID
-John	Smit	21	1859
+John	Smit	21	6672

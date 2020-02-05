@@ -4,8 +4,8 @@
 //Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #include <iostream>
-#include "employee.h"
-#include "fileio.h"
+#include "../lib/employee.h"
+#include "../lib/fileio.h"
 
 int main(void){
     srand(time(NULL));

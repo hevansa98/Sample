@@ -6,7 +6,7 @@
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H
 
-#include "human.h"
+#include "../lib/human.h"
 #include <iostream>
 #include <string>
 

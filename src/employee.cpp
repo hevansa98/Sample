@@ -3,7 +3,7 @@
 //Desc: Source for employee.h
 //Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
-#include "employee.h"
+#include "../lib/employee.h"
 
 employee::employee(string _first_name, string _last_name, short _age) : human(_first_name, _last_name, _age, 1){
     id_employee = assignNewEmployeeId();

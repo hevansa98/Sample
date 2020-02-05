@@ -3,7 +3,7 @@
 //Desc: Source for fileio.h
 //Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
-#include "fileio.h"
+#include "../lib/fileio.h"
 
 fileio::fileio(){
     ofstream initFile;
