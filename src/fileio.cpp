@@ -7,12 +7,12 @@
 
 fileio::fileio(){
     ofstream initFile;
-    if(!std::filesystem::exists("../tmp/human.txt")){
+    if(!std::filesystem::exists("../data/human.txt")){
         initFile.open("../tmp/human.txt", ios::out | ios::binary);
         initFile << "FNAM\tLNAM\tAGE\tID" << endl;
         initFile.close();
     }
-    if(!std::filesystem::exists("../tmp/employee.txt")){
+    if(!std::filesystem::exists("../data/employee.txt")){
         initFile.open("../tmp/employee.txt", ios::out | ios::binary);
         initFile << "FNAM\tLNAM\tAGE\tID\t\tEMID" << endl;
         initFile.close();
@@ -23,7 +23,7 @@ employee * fileio::getEmployee(int _eId){
     employee *tmp;
     ifstream fileIn;
     
-    fileIn.open("../tmp/employee.txt");
+    fileIn.open("../data/employee.txt");
     
     fileIn >> f_name >> f_name >> f_name >> f_name >> f_name;
     
@@ -41,7 +41,7 @@ employee * fileio::getEmployee(int _eId){
 human * fileio::getHuman(int _uId){
     human *tmp;
     ifstream fileIn;
-    fileIn.open("../tmp/human.txt");
+    fileIn.open("../data/human.txt");
     
     fileIn >> f_name >> f_name >> f_name >> f_name;
     
@@ -58,14 +58,14 @@ human * fileio::getHuman(int _uId){
 
 void fileio::writeEmployee(employee* _user){
     ofstream fileOut;
-    fileOut.open("../tmp/employee.txt", ios::out | ios::app);
+    fileOut.open("../data/employee.txt", ios::out | ios::app);
     fileOut << _user -> getFirstName(4) << "\t" << _user -> getLastName(4) << "\t" << _user -> getAge() << "\t" << _user -> getId() << "\t" << _user -> getEmployeeId() << endl;
     fileOut.close();
 }
 
 void fileio::writeHuman(human* _user){
     ofstream fileOut;
-    fileOut.open("../tmp/human.txt", ios::out | ios::app);
+    fileOut.open("../data/human.txt", ios::out | ios::app);
     fileOut << _user -> getFirstName(4) << "\t" << _user -> getLastName(4) << "\t" << _user -> getAge() << "\t" << _user -> getId() << endl;
     fileOut.close();
 }
