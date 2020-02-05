@@ -1,3 +1,3 @@
 #!/bin/bash
-
-g++ main.cpp human.cpp employee.cpp -o a.out
+rm -rf ../tmp/*
+g++ -std=c++17 main.cpp human.cpp employee.cpp fileio.cpp -lstdc++fs -o a.out

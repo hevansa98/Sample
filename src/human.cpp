@@ -7,7 +7,7 @@
 
 human::human(string _first_name, string _last_name, short _age, int _id_type) : first_name(_first_name), last_name(_last_name), age(_age), id_type(_id_type){
     id_number = assignNewId();
-    if(id_type == 0){
+    if(!id_type){
         cout << "First Name:\t\t" << first_name << endl;
         cout << "Last Name:\t\t" << last_name << endl;
         cout << "ID Number:\t\t" << id_number << endl;
@@ -20,12 +20,28 @@ human::human(string _first_name, string _last_name, short _age, int _id_number, 
     
 }
 
-string human::getFirstName(){
-    return first_name;
+string human::getFirstName(int length){
+    if(!length){
+        return first_name;
+    }else{
+        if(length > first_name.length()){
+            return first_name+"\t";
+        }else{
+            return first_name.substr(0, length);
+        }
+    }
 }
 
-string human::getLastName(){
-    return last_name;
+string human::getLastName(int length){
+    if(!length){
+        return last_name;
+    }else{
+        if(length > last_name.length()){
+            return last_name+"\t";
+        }else{
+            return last_name.substr(0, length);
+        }
+    }
 }
 
 string human::getFullName(){

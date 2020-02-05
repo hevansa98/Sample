@@ -15,7 +15,7 @@ employee::employee(string _first_name, string _last_name, short _age) : human(_f
     cout << "\n--------------------\n" << endl;
 }
 
-employee::employee(string _first_name, string _last_name, short _age, int _id_number, int _id_type, int _id_employee) : human(_first_name, _last_name, _age, _id_number, _id_type), id_employee(_id_employee){
+employee::employee(string _first_name, string _last_name, short _age, int _id_number, int _id_employee) : human(_first_name, _last_name, _age, _id_number, 1), id_employee(_id_employee){
     cout << "First Name:\t\t" << first_name << endl;
     cout << "Last Name:\t\t" << last_name << endl;
     cout << "ID Number:\t\t" << id_number << endl;
@@ -32,4 +32,8 @@ void employee::dispInformation(string status){
     human::dispInformation(status);
     cout << "Employee ID Number:\t" << id_employee << endl;
     cout << "\n--------------------\n" << endl;
+}
+
+int employee::getEmployeeId(){
+    return id_employee;
 }

@@ -3,6 +3,9 @@
 //Desc: Header for human.cpp
 //Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
+#ifndef HUMAN_H
+#define HUMAN_H
+
 #include <iostream>
 #include <string>
 #include <cstdlib> 
@@ -20,10 +23,12 @@ public:
     human(string, string, short, int = 0);      //FirstName, LastName, Age, UserType
     human(string, string, short, int, int);
     string getFullName();                       //returns "first_name last_name"
-    string getFirstName();                      //returns "first_name"
-    string getLastName();                       //returns "last_name"
+    string getFirstName(int = 0);                      //returns "first_name"
+    string getLastName(int = 0);                       //returns "last_name"
     short getAge();                             //returns age
     int getId();                                //returns pointer to id_number
     int assignNewId();                          //returns random number from 1 to 10000
     void dispInformation(string = "Regular");   //prints object attribute data to console (first_name, last_name, age, id_number[0])
 };
+
+#endif //HUMAN_H
