@@ -19,7 +19,7 @@ fileio::fileio(){
     }
 }
 
-employee * fileio::getEmployee(int eId){
+employee * fileio::getEmployee(int _eId){
     employee *tmp;
     ifstream fileIn;
     
@@ -28,47 +28,44 @@ employee * fileio::getEmployee(int eId){
     fileIn >> f_name >> f_name >> f_name >> f_name >> f_name;
     
     while(fileIn >> f_name >> l_name >> age >> id_num >> id_employee){
-        if(eId == id_employee){
+        if(_eId == id_employee){
             tmp = new employee(f_name, l_name, age, id_num, id_employee);
+            fileIn.close();
             return tmp;
         }        
     }
+    fileIn.close();
     return nullptr;
 }
 
-// human fileio::getHuman(int uId){
-//     ifstream fileIn;
-//     fileIn.open("../tmp/human.txt");
-//     
-//     fileIn.close();
-// }
+human * fileio::getHuman(int _uId){
+    human *tmp;
+    ifstream fileIn;
+    fileIn.open("../tmp/human.txt");
+    
+    fileIn >> f_name >> f_name >> f_name >> f_name;
+    
+    while(fileIn >> f_name >> l_name >> age >> id_num){
+        if(_uId == id_num){
+            tmp = new human(f_name, l_name, age, id_num, 0);
+            fileIn.close();
+            return tmp;
+        }        
+    }
+    fileIn.close();
+    return nullptr;
+}
 
-void fileio::writeEmployee(employee* user){
+void fileio::writeEmployee(employee* _user){
     ofstream fileOut;
     fileOut.open("../tmp/employee.txt", ios::out | ios::app);
-    fileOut << user -> getFirstName(4) << "\t" << user -> getLastName(4) << "\t" << user -> getAge() << "\t" << user -> getId() << "\t" << user -> getEmployeeId() << endl;
+    fileOut << _user -> getFirstName(4) << "\t" << _user -> getLastName(4) << "\t" << _user -> getAge() << "\t" << _user -> getId() << "\t" << _user -> getEmployeeId() << endl;
     fileOut.close();
 }
 
-void fileio::writeHuman(human* user){
+void fileio::writeHuman(human* _user){
     ofstream fileOut;
     fileOut.open("../tmp/human.txt", ios::out | ios::app);
-    fileOut << user -> getFirstName(4) << "\t" << user -> getLastName(4) << "\t" << user -> getAge() << "\t" << user -> getId() << endl;
+    fileOut << _user -> getFirstName(4) << "\t" << _user -> getLastName(4) << "\t" << _user -> getAge() << "\t" << _user -> getId() << endl;
     fileOut.close();
-}
-
-string fileio::getFName(){
-    return f_name;
-}
-
-string fileio::getLName(){
-    return l_name;
-}
-
-int fileio::getId(){
-    return id_num;
-}
-
-int fileio::getIdEmp(){
-    return id_employee;
 }

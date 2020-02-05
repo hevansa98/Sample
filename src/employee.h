@@ -16,11 +16,11 @@ class employee : public human{  //employee inherits human attributes
 private:
     int id_employee;
 public:
-    employee(string, string, short);                //Constructor for initializing employee object
-    employee(string, string, short, int, int); //Constructor for existing employee
-    int assignNewEmployeeId();
-    int getEmployeeId();
-    void dispInformation(string = "Employee");
+    employee(string, string, short);                //Constructor for initializing employee object (FName, LName, Age)
+    employee(string, string, short, int, int);      //Constructor for existing employee (FName, LName, Age, ID Number, Employee ID Number)
+    int assignNewEmployeeId();                      //Assigns random 5 digit number for employee
+    int getEmployeeId();                            //Returns the object's Employee ID
+    void dispInformation(string = "Employee");      //Displays current object's attributes
 };
 
 #endif //EMPLOYEE_H

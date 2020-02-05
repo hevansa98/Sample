@@ -28,8 +28,8 @@ int employee::assignNewEmployeeId(){
     return (rand()%90000)+10000;
 }
 
-void employee::dispInformation(string status){
-    human::dispInformation(status);
+void employee::dispInformation(string _status){
+    human::dispInformation(_status);
     cout << "Employee ID Number:\t" << id_employee << endl;
     cout << "\n--------------------\n" << endl;
 }

@@ -15,19 +15,15 @@
 using namespace std;
 
 class fileio{
-private:
-    string f_name, l_name;
-    int id_num, age, id_employee;
+private:                            //short term storage for data transitioning from file to object
+    string f_name, l_name;          //First Name, Last Name
+    int id_num, age, id_employee;   //User ID, Age, Employee ID
 public:
-    fileio();
-    employee * getEmployee(int);
-    //human getHuman(int);
-    void writeHuman(human*);
-    void writeEmployee(employee*);
-    string getFName();
-    string getLName();
-    int getId();
-    int getIdEmp();
+    fileio();                       //When called checks for existence of 'database' files. If they do not exists, creates them
+    employee * getEmployee(int);    //Returns employee object given employee ID. If does not exist, return nullptr
+    human * getHuman(int);          //Returns human object given human ID. If does not exist, return nullptr
+    void writeHuman(human*);        //Writes human object to file
+    void writeEmployee(employee*);  //Writes employee object to file
 };
 
 #endif //FILEIO_H

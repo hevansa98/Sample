@@ -17,29 +17,35 @@ human::human(string _first_name, string _last_name, short _age, int _id_type) : 
 }
 
 human::human(string _first_name, string _last_name, short _age, int _id_number, int _id_type) : first_name(_first_name), last_name(_last_name), age(_age), id_number(_id_number), id_type(_id_type){
-    
+    if(!id_type){
+        cout << "First Name:\t\t" << first_name << endl;
+        cout << "Last Name:\t\t" << last_name << endl;
+        cout << "ID Number:\t\t" << id_number << endl;
+        cout << "User Classification:\t" << id_type << endl;
+        cout << "\n--------------------\n" << endl;
+    }
 }
 
-string human::getFirstName(int length){
-    if(!length){
+string human::getFirstName(int _length){
+    if(!_length){
         return first_name;
     }else{
-        if(length > first_name.length()){
+        if(_length > first_name.length()){
             return first_name+"\t";
         }else{
-            return first_name.substr(0, length);
+            return first_name.substr(0, _length);
         }
     }
 }
 
-string human::getLastName(int length){
-    if(!length){
+string human::getLastName(int _length){
+    if(!_length){
         return last_name;
     }else{
-        if(length > last_name.length()){
+        if(_length > last_name.length()){
             return last_name+"\t";
         }else{
-            return last_name.substr(0, length);
+            return last_name.substr(0, _length);
         }
     }
 }
@@ -60,12 +66,12 @@ int human::assignNewId(){
     return (rand()%9998)+1;
 }
 
-void human::dispInformation(string status){
-    cout << "Status:\t" << status << endl;
+void human::dispInformation(string _status){
+    cout << "Status:\t" << _status << endl;
     cout << "Name:\t" << getFullName() << endl;
     cout << "Age:\t" << getAge() << endl;
     cout << "ID:\t" << getId() << endl;
-    if(!status.compare("Regular")){
+    if(!_status.compare("Regular")){
         cout << "\n--------------------\n" << endl;
     }
 }

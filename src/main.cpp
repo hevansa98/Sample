@@ -22,16 +22,23 @@ int main(void){
     writeOut.writeEmployee(user2);
     writeOut.writeHuman(user1);
     
-    employee * newUser;
-    newUser = writeOut.getEmployee(user2 -> getEmployeeId());
+    employee * newEmployee;
+    newEmployee = writeOut.getEmployee(user2 -> getEmployeeId());
     
-    if(!newUser){
+    human * newHuman;
+    newHuman = writeOut.getHuman(user1 -> getId());
+    
+    if(!newEmployee){
         std::cout << "User is null!" << std::endl;
-        delete newUser;
+        delete newEmployee;
     }
     
-    delete user1;
-    delete user2;
+    if(!newHuman){
+        std::cout << "User is null!" << std::endl;
+        delete newHuman;
+    }
+    
+    delete user1, user2, newHuman, newEmployee;
     
     return 0;
 }
