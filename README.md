@@ -18,3 +18,4 @@ This is meant as a code sample demonstrating the author's knowledge and capabili
 
 # TODO:
 Add GUI using Qt
+Add user class (inherits human)
