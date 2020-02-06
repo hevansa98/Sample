@@ -1,7 +1,6 @@
 //Author: Harry Allen
 //Name: employee.h
 //Desc: Header for employee.cpp
-//Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #ifndef EMPLOYEE_H
 #define EMPLOYEE_H

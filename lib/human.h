@@ -1,7 +1,6 @@
 //Author: Harry Allen
 //Name: human.h
 //Desc: Header for human.cpp
-//Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #ifndef HUMAN_H
 #define HUMAN_H

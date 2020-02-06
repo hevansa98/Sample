@@ -1,7 +1,6 @@
 //Author: Harry Allen
 //Name: fileio.h
 //Desc: Header for fileio.cpp
-//Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #ifndef FILEIO_H
 #define FILEIO_H
