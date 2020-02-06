@@ -7,6 +7,7 @@ Author: Harry E. Allen, IV
 # Function of Code
 This code is mean to mock a library database system with the two primary users being either employees or reagular users or "humans"
 </br>The 'databases' are two .txt files with user information
+</br>The employee is derived from the human and in the future the user class will be derived from the human class
 </br>Future plans include a simple checkout system and a simplified GUI
 
 # Compile instructions
