@@ -1,7 +1,6 @@
 //Author: Harry Allen
 //Name: human.cpp
 //Desc: Source for human.h
-//Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #include "../lib/human.h"
 

@@ -1,7 +1,6 @@
 //Author: Harry Allen
 //Name: employee.cpp
 //Desc: Source for employee.h
-//Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #include "../lib/employee.h"
 

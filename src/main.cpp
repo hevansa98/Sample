@@ -1,7 +1,6 @@
 //Author: Harry Allen
 //Name: main.cpp
 //Desc: Main file
-//Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #include <iostream>
 #include "../lib/employee.h"

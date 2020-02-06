@@ -1,7 +1,6 @@
 //Author: Harry Allen
 //Name: fileio.cpp
 //Desc: Source for fileio.h
-//Disclaimer: For sample purpose only. Not meant for any use other than object oriented "prowess" demonstration
 
 #include "../lib/fileio.h"
 
