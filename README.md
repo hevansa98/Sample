@@ -4,10 +4,10 @@ Author: Harry E. Allen, IV
 </br>MIT License
 </br></br>
 # Compile instructions
-</br>bash compileAndRun.sh
+bash compileAndRun.sh
 
 # Disclaimer
-</br>This is meant as a code sample demonstrating the author's knowledge and capability in object-oriented programming. </br>It is still under development and it therefore consistently updated.
+This is meant as a code sample demonstrating the author's knowledge and capability in object-oriented programming. </br>It is still under development and it therefore consistently updated.
 
 # TODO:
-</br>Add GUI using Qt
+Add GUI using Qt
