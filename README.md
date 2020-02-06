@@ -3,6 +3,12 @@ Author: Harry E. Allen, IV
 </br>Purpose: Code Sample Repository
 </br>MIT License
 </br></br>
+
+# Function of Code
+This code is mean to mock a library database system with the two primary users being either employees or reagular users or "humans"
+</br>The 'databases' are two .txt files with user information
+</br>Future plans include a simple checkout system and a simplified GUI
+
 # Compile instructions
 bash compileAndRun.sh
 
