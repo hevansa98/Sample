@@ -17,5 +17,5 @@ bash compileAndRun.sh
 This is meant as a code sample demonstrating the author's knowledge and capability in object-oriented programming. </br>It is still under development and it therefore consistently updated.
 
 # TODO:
-Add GUI using Qt
+Add GUI using Qt (https://github.com/hevansa98/Sample-GUI.git)
 </br>Add user class (inherits human)
