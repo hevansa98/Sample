@@ -2,6 +2,7 @@
 Author: Harry E. Allen, IV 
 </br>Purpose: Code Sample Repository
 </br>MIT License
+</br>GUI Repository https://github.com/hevansa98/Sample-GUI.git
 </br></br>
 
 # Function of Code
