@@ -12,7 +12,7 @@ This code is mean to mock a library database system with the two primary users b
 </br>Future plans include a simple checkout system and a simplified GUI
 
 # Compile instructions
-bash compileAndRun.sh
+```bash compileAndRun.sh```
 
 # Disclaimer
 This is meant as a code sample demonstrating the author's knowledge and capability in object-oriented programming. </br>It is still under development and it therefore consistently updated.
